@@ -2,8 +2,12 @@ const mongoose = require("mongoose");
 
 // Define the schema for the Post model
 const PostSchema = new mongoose.Schema({
-  postText: { type: String, required: true },
+  imageText: { type: String, required: true },
   //id associate kr rahe hai yaha
+
+  image : {
+    type : String,
+  },
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User123",

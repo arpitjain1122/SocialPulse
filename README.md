@@ -15,3 +15,5 @@ har post mein hogi ek image aur caption.
 multer
 image upload
 caption upload
+
+jo file upload hui hai usse save kro as a post, aur uska post id user ko do and post ko user id do.
