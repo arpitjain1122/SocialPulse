@@ -7,3 +7,11 @@ router.get("/alluserposts") - using this route to find all users and getting dat
 
 
 Flash Messages for error display
+
+
+ab hame posts create krne hai ------------------------------
+
+har post mein hogi ek image aur caption.
+multer
+image upload
+caption upload
