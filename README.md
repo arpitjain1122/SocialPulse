@@ -17,3 +17,5 @@ image upload
 caption upload
 
 jo file upload hui hai usse save kro as a post, aur uska post id user ko do and post ko user id do.
+
+till now all the images are being uploaded and seen on the profile page after uploading

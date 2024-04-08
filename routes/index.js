@@ -42,7 +42,7 @@ router.post(
 
     user.posts.push(post._id);
     await user.save();
-    res.send("done");
+    res.redirect("/profile")
   }
 );
 
@@ -51,10 +51,11 @@ router.get("/profile", isLoggedIn, async function (req, res) {
 
   const user = await userModel.findOne({
     username: req.session.passport.user,
-  });
+  }).populate("posts");
   console.log(user);
   res.render("profile", { user });
-});
+})
+
 
 router.post("/register", function (req, res) {
   const { username, email, fullName } = req.body;
